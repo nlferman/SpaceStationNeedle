@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ForceFieldTexture : MonoBehaviour
 {
-    [MenuItem("Textures/ForceFieldTexture3D")]
+    // [MenuItem("Textures/ForceFieldTexture3D")]
     static void CreateTexture3D()
     {
         // Configure the texture
@@ -41,6 +41,6 @@ public class ForceFieldTexture : MonoBehaviour
         texture.Apply();
 
         // Save the texture to your Unity Project
-        AssetDatabase.CreateAsset(texture, "Assets/ForceFieldTexture3D.asset");
+        // AssetDatabase.CreateAsset(texture, "Assets/ForceFieldTexture3D.asset");
     }
 }
