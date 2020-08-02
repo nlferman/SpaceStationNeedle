@@ -227,7 +227,7 @@ MonoBehaviour:
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 3419990433444214378, guid: 33f82bbeabc9d574fb305b1d21376165,
     type: 3}
-  ButtonPromptText: Space
+  ButtonPromptText: Button 0
   ButtonPromptColor: {r: 1, g: 1, b: 1, a: 1}
   ButtonPromptTextColor: {r: 0, g: 0, b: 0, a: 1}
   AlwaysShowPrompt: 0
