@@ -19,7 +19,7 @@ public class ForceFieldAbility : MonoBehaviour
     {
         print("Something entered" + col.transform.name);
         if (!abilityEnabled) return;
-        if (col.transform.GetComponent<Projectile>() != null && col.tag != "Player")
+        if (col.transform.GetComponent<Projectile>() != null && col.gameObject.layer != 18)
         {
             print("projectile?");
             GameObject projectile = col.gameObject;

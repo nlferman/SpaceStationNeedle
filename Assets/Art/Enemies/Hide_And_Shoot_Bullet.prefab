@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 114849932841537952}
   - component: {fileID: 61951514383847170}
   - component: {fileID: 50202276758696708}
-  m_Layer: 18
+  m_Layer: 28
   m_Name: Hide_And_Shoot_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 4707329905472030}
   - component: {fileID: 198870303262013670}
   - component: {fileID: 199972698037460318}
-  m_Layer: 18
+  m_Layer: 28
   m_Name: ForwardParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5031,7 +5031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4947717920887442}
   - component: {fileID: 212414986777507442}
-  m_Layer: 18
+  m_Layer: 28
   m_Name: HideAndShootBulletSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5114,7 +5114,7 @@ GameObject:
   - component: {fileID: 4567811367096734}
   - component: {fileID: 198720774176498324}
   - component: {fileID: 199738346860491614}
-  m_Layer: 18
+  m_Layer: 28
   m_Name: BulletImpact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9995,7 +9995,7 @@ GameObject:
   - component: {fileID: 4905919693819502}
   - component: {fileID: 198170611016743570}
   - component: {fileID: 199828641852572644}
-  m_Layer: 18
+  m_Layer: 28
   m_Name: SideParticlesBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14925,7 +14925,7 @@ GameObject:
   - component: {fileID: 3446189826040804782}
   - component: {fileID: 5593128993031867096}
   - component: {fileID: 5289273679492418980}
-  m_Layer: 18
+  m_Layer: 28
   m_Name: HitDamageableFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14961,6 +14961,7 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 3446189826040804782}
   - {fileID: 5593128993031867096}
+  - {fileID: 5289273679492418980}
   InitializationMode: 2
   SafeMode: 3
   AutoPlayOnStart: 0
@@ -15073,7 +15074,7 @@ GameObject:
   - component: {fileID: 9191940588303511206}
   - component: {fileID: 3817349618564376740}
   - component: {fileID: 4884092679620704490}
-  m_Layer: 18
+  m_Layer: 28
   m_Name: HitNonDamageableFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}

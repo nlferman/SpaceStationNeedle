@@ -10083,6 +10083,7 @@ GameObject:
   - component: {fileID: 1537431008471727093}
   - component: {fileID: 1537588765501336491}
   - component: {fileID: 782634975}
+  - component: {fileID: -1000341839774534068}
   m_Layer: 13
   m_Name: FlyBy
   m_TagString: Enemy
@@ -10484,6 +10485,24 @@ MonoBehaviour:
   boxColliders:
   - {fileID: 1448116280412549213}
   - {fileID: 1448150954021486811}
+--- !u!114 &-1000341839774534068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497131874697863329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c5cde4f9ad2514f8f7c0dcdbb02e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
 --- !u!1 &1723760115981628342
 GameObject:
   m_ObjectHideFlags: 0

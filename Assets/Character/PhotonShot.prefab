@@ -4882,7 +4882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoundsBasedOn: 1
-  LifeTime: 2
+  LifeTime: 5
   FaceDirection: 1
   Speed: 300
   Acceleration: 0
@@ -4890,7 +4890,7 @@ MonoBehaviour:
   DirectionCanBeChangedBySpawner: 1
   FlipValue: {x: -1, y: 1, z: 1}
   ProjectileIsFacingRight: 1
-  InitialInvulnerabilityDuration: 0
+  InitialInvulnerabilityDuration: 0.2
   DamageOwner: 0
 --- !u!114 &114266039652667574
 MonoBehaviour:

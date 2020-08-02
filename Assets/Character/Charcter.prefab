@@ -909,6 +909,7 @@ GameObject:
   - component: {fileID: 6649005841690124700}
   - component: {fileID: 216465076788249691}
   - component: {fileID: 5909276113463260457}
+  - component: {fileID: -4591012247533674492}
   m_Layer: 10
   m_Name: Charcter
   m_TagString: Player
@@ -1046,7 +1047,7 @@ MonoBehaviour:
   DirectionOnSpawn: 0
   CharacterAnimator: {fileID: 3567605740333072280}
   UseDefaultMecanim: 1
-  CharacterModel: {fileID: 1738930735843467631}
+  CharacterModel: {fileID: 1738930733930407236}
   SendStateChangeEvents: 1
   SendStateUpdateEvents: 1
   OptimizeForMobile: 1
@@ -1238,7 +1239,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738930735843467631}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3c5cde4f9ad2514f8f7c0dcdbb02e98, type: 3}
   m_Name: 
@@ -1264,7 +1265,7 @@ MonoBehaviour:
   Model: {fileID: 1738930733930407236}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 100
+  InitialHealth: 10
   MaximumHealth: 100
   ImmuneToKnockback: 0
   DamageMMFeedbacks: {fileID: 7941144806273449166}
@@ -1296,16 +1297,16 @@ MonoBehaviour:
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
   FacingMode: 3
-  ModelShouldFlip: 0
-  ModelFlipValueLeft: {x: -1, y: 1, z: 1}
+  ModelShouldFlip: 1
+  ModelFlipValueLeft: {x: 1, y: 1, z: 1}
   ModelFlipValueRight: {x: 1, y: 1, z: 1}
   ModelShouldRotate: 0
-  ModelRotationValueLeft: {x: 0, y: 180, z: 0}
+  ModelRotationValueLeft: {x: 0, y: 0, z: 0}
   ModelRotationValueRight: {x: 0, y: 0, z: 0}
   ModelRotationSpeed: 0
   InitialFacingDirection: 3
-  AbsoluteThresholdMovement: 0.5
-  AbsoluteThresholdWeapon: 0.5
+  AbsoluteThresholdMovement: 1
+  AbsoluteThresholdWeapon: 1
   CurrentFacingDirection: 1
   IsFacingRight: 1
 --- !u!114 &1853535264872849743
@@ -1380,6 +1381,37 @@ MonoBehaviour:
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
   FallingFeedback: {fileID: 0}
+--- !u!114 &-4591012247533674492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738930735843467631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713a7621405152840b50c815ea8e6a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  RotationMode: 3
+  ShouldRotateToFaceMovementDirection: 1
+  MovementRotationSpeed: 2
+  MovementRotatingModel: {fileID: 1738930733930407236}
+  RotateToFaceMovementDirectionSpeed: 10
+  AbsoluteThresholdMovement: 0.5
+  ModelDirection: {x: 0, y: 0, z: 0}
+  ModelAngles: {x: 0, y: 0, z: 0}
+  ShouldRotateToFaceWeaponDirection: 1
+  WeaponRotationSpeed: 2
+  WeaponRotatingModel: {fileID: 1738930733930407236}
+  RotateToFaceWeaponDirectionSpeed: 10
+  AbsoluteThresholdWeapon: 0.5
 --- !u!1 &4245444782874175883
 GameObject:
   m_ObjectHideFlags: 0
@@ -6215,7 +6247,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4758709927424765593}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.4, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6725,15 +6757,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8939c59b44074f740abe86bd71765521, type: 3}
---- !u!4 &4902076578904920916 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2933144352798757457, guid: 8939c59b44074f740abe86bd71765521,
-    type: 3}
-  m_PrefabInstance: {fileID: 7832660881449189637}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &2816964007479505094 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5450743431527723459, guid: 8939c59b44074f740abe86bd71765521,
+    type: 3}
+  m_PrefabInstance: {fileID: 7832660881449189637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4902076578904920916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2933144352798757457, guid: 8939c59b44074f740abe86bd71765521,
     type: 3}
   m_PrefabInstance: {fileID: 7832660881449189637}
   m_PrefabAsset: {fileID: 0}
