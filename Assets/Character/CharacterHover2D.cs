@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.TopDownEngine;
 using MoreMountains.Tools;
 using MoreMountains.Feedbacks;
 
@@ -10,7 +11,7 @@ namespace MoreMountains.TopDownEngine
     /// Add this ability to a character and it'll be able to hover in 2D.
     /// </summary>
     [AddComponentMenu("TopDown Engine/Character/Abilities/Character Hover 2D")]
-    public class CharacterHover2D : CharacterAbility, MMEventListener<LoseAbilityEvent>
+    public class CharacterHover2D : CharacterAbilityEvents, MMEventListener<LoseAbilityEvent>
 	{
         /// the duration of the hover
         [Tooltip("the duration of the hover")]
