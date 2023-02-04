@@ -225,7 +225,7 @@ TextureImporter:
       213: -8957942764683618044
     second: Pothole_Destroyed
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -242,10 +242,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -254,12 +256,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -277,11 +279,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -345,6 +351,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1922,9 +1940,83 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Pothole_Destroyed: -8957942764683618044
+      Launcher_Oval_2: 133206962293129866
+      Green_Door_4: -5204866754122809574
+      Photon_Cannons_Opening_1: 8051249747175636869
+      Launcher_Round_2: 8163972999559841902
+      Ship_Green: -6401660212284299933
+      Green_Door_7: -8033440846659449436
+      Porthole_Opening_3: 7842233440562819812
+      Battle_Tank_Giant_Green: 876784968147787122
+      Monster_Bugger_Green_Purple: 911881859052452035
+      Photon_Cannons_Opening_2: 4349874989898575965
+      Brick_Thickest: -5661289293352146724
+      Porthole_Small_Closed: 414078030284958077
+      Ship_Gray: -6271420699411309263
+      Switch_Holster_Blue: -2782341204894616949
+      Block_S: 5260237918008780845
+      enemies_3: 1961183383047197949
+      Porthole_Small_Opening_3: -2653283651817642593
+      Green_Door_8: -3007867907188248330
+      Ship_Small_Bronze: -8260159705139820125
+      Block_Purple: 5956736000263300668
+      Unknown: -6812798382714016367
+      Shot_Purple_Round_2: 8570748866575639986
+      Green_Door_3: -7216406059174729102
+      Ship_Brown: 8237017158513173956
+      Porthole_Small_Opening_1: -7994963395263852509
+      Launcher_Oval_1: 639755353174571365
+      Block_Arrow: -8741287374936158881
+      Brick_Thicker: 262253260368052137
+      Pump_Rainbow: 3229708652140166120
+      Ship_Small_Red: 6969128963623422457
+      Switch_Lever_Green: 6230911579049521198
+      Ship_Small_Green: 4120149006412595196
+      Ship_Small_Brown: -5635799371484771798
+      Brick_Thin: -6949527019116515464
+      Shot_Purple_Thin_2: 2093997543474720784
+      Photon_Cannons_Closed: 1017871411792229582
+      Launcher_Round_1: -5316398796247020869
+      Ship_Blue: 3788001193901675320
+      Porthole_Sealed: 7153525974244860219
+      Green_Door_6: 7919937908647015373
+      Switch_Holster_Green: -3029504926045522119
+      Shot_Purple_Round_1: -7994189068178414372
+      Block_Blue: 1051372748379046019
+      Bugger_Brown_Purple_Green: -3231492579343523708
+      Blue_Ship: 2731795287329381114
+      Block_B: 6778329007797468826
+      Block_M: -5571332060652782084
+      Ship_Small_Green_2: -2392329122036793305
+      Ship_Gold: -7143632009852538275
+      Green_Clout_2: -4253028335022237997
+      Ship_Green_Blue: 5071658169964249115
+      Switch_Lever_Blue: -8108438390446734492
+      Humanoid_Winged_Large: 8203917247392330234
+      Brick_Less_Thin: -7373728255155398809
+      Green_Door_5: -5032397523261126367
+      Block_Orange: -194386637390385213
+      Monster_Head_Green: -1646162936135731460
+      Green_Door_1: -5813155369267699591
+      Ship_Bronze: -4535217547422562818
+      Porthole_Small_Opening_2: -1376865339905038310
+      Porthole_Opening_4: 3043105842737735301
+      Yellow_Ship: -3351989875833439213
+      Green_Clout_1: -8384590935982494654
+      Porthole_Opening_1: 13176795997692230
+      Shot_Purple_Thin_1: 5677686872196009033
+      Porthole_Opening_2: -8813625427563929358
+      Brick_5000: -574701310493481389
+      Green_Door_2: -611867289277441295
+      Photon_Cannons_Opening_3: 8548960543114135391
+      Ship_Dark_Green: 2486660915761704726
+      Humanoid: -5078133620036087085
+      Block_Green: -3690128099936111282
+      Monster_Head_Gray: -8137250916114564832
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
