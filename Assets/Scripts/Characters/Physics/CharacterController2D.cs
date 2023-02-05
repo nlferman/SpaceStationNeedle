@@ -15,6 +15,9 @@ namespace SSN.Character.Physics
         public float RunMultiplier = 1.25f;
         #endregion
 
+        protected float CurrentVelocityMultiplier = 1f;
+        public Vector2 Direction = Vector2.zero;
+
         #region Components
         protected Rigidbody2D RGB2D;
         protected BoxCollider2D Collider;
@@ -24,8 +27,54 @@ namespace SSN.Character.Physics
 		#region Starter Cycle Functions
         protected virtual void Awake()
         {
-            
+            Initalization();
+        }
+		protected virtual void Start()
+		{
+
+		}
+        protected virtual void Initalization()
+        {
+            RGB2D = GetComponent<Rigidbody2D>();
+            Collider = GetComponent<BoxCollider2D>();
+            Character2D = GetComponent<Character2D>();
+        }
+        protected virtual void ResetController()
+        {
+            RGB2D.freezeRotation = true;
         }
 		#endregion
+
+        protected virtual void FixedUpdate()
+        {
+            Move();
+        }
+
+        protected virtual void Move()
+        {
+
+        }
+        //More will be added here with different logic.
+        public virtual void ChangeDirection(Vector2 _direction)
+        {
+            Direction = _direction;
+        }
+        protected virtual void AddForce(Vector2 _force, ForceMode2D _forceMode2D = ForceMode2D.Impulse)
+        {
+
+        }
+        protected virtual void SetStates()
+        {
+            if(Velocity != Vector2.zero)
+            {
+                Character2D.CharacterMoveState = CharacterMoveState.Walking;
+                Character2D.SetFacingDirection((Direction.x > 0) ? FacingDirection.Right : FacingDirection.Left, Direction);
+            }
+            else
+            {
+				Character2D.CharacterMoveState = CharacterMoveState.Idle;
+                Character2D.SetFacingDirection((PreviousVelocity.x > 0) ? FacingDirection.Right : FacingDirection.Left, PreviousVelocity);
+			}
+        }
 	}
 }
