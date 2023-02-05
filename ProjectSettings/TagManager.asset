@@ -25,7 +25,12 @@ TagManager:
   - NoPathfinding
   - Enemies
   - NoCollisions
-  - Hole
+  - Pit
+  - Pit(Air)
+  - Ground
+  - Ground(Air)
+  - Balcony
+  - Balcony(Air)
   - MovingPlatform
   - FallingPlatform
   - Projectile
@@ -33,11 +38,6 @@ TagManager:
   - Camera2
   - Camera3
   - Camera4
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
