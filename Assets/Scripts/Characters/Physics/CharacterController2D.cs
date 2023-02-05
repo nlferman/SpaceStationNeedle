@@ -27,11 +27,11 @@ namespace SSN.Character.Physics
 		#region Starter Cycle Functions
         protected virtual void Awake()
         {
-            Initalization();
+			Initalization();
         }
 		protected virtual void Start()
 		{
-
+            ResetController();
 		}
         protected virtual void Initalization()
         {
@@ -48,12 +48,18 @@ namespace SSN.Character.Physics
         protected virtual void FixedUpdate()
         {
             Move();
+            SetStates();
         }
 
         protected virtual void Move()
         {
+            Velocity = Direction * Speed * CurrentVelocityMultiplier;
+            RGB2D.velocity = Velocity;
 
+            if(Velocity != Vector2.zero)
+                PreviousVelocity = Velocity;
         }
+
         //More will be added here with different logic.
         public virtual void ChangeDirection(Vector2 _direction)
         {

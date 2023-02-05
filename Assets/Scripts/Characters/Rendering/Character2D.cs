@@ -33,11 +33,14 @@ namespace SSN.Character.Core
 
         protected virtual void Awake()
         {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            anim = GetComponent<Animator>();
+            controller2D = GetComponent<CharacterController2D>();
         }
 
         protected virtual void Start()
         {
-
+            Initialize();
         }
 
 		/// <summary>
@@ -45,22 +48,23 @@ namespace SSN.Character.Core
 		/// </summary>
 		public virtual void Initialize()
         {
-
+            SetFacingDirection(StartDirection, Vector2.zero);
+            SetFlipX();
         }
 
         protected virtual void LateUpdate()
         {
-
-        }
-
+			SetAnimations();
+		}
         public virtual void SetFacingDirection(FacingDirection _facingDirection, Vector2 _direction)
         {
+            if(anim is null) return;
+
             anim.SetFloat("DirectionX", _direction.x);
 			anim.SetFloat("DirectionY", _direction.y);
             FacingDirection = _facingDirection;
             SetFlipX();
 		}
-
         protected virtual void SetAnimations()
         {
             stateString = CharacterMoveState.ToString();
@@ -72,7 +76,6 @@ namespace SSN.Character.Core
                 anim.CrossFade(animationHash,0);
             }
         }
-
         protected void SetFlipX()
         {
             if(SpriteDirection == FacingDirection.Right)
