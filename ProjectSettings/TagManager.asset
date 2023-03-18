@@ -46,18 +46,27 @@ TagManager:
   - name: Background
     uniqueID: 1798043625
     locked: 0
-  - name: Ground
-    uniqueID: 2296623839
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Foreground
+  - name: Pit
+    uniqueID: 3174922213
+    locked: 0
+  - name: Pit (Air)
+    uniqueID: 422647201
+    locked: 0
+  - name: Ground
+    uniqueID: 2296623839
+    locked: 0
+  - name: Ground (Air)
     uniqueID: 1603220759
     locked: 0
-  - name: Characters
+  - name: Balcony
     uniqueID: 47421343
     locked: 0
-  - name: Above
+  - name: Balcony (Air)
     uniqueID: 961700441
+    locked: 0
+  - name: Foreground
+    uniqueID: 1431950923
     locked: 0
