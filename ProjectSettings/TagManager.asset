@@ -19,7 +19,7 @@ TagManager:
   - 
   - 
   - Obstacles
-  - 
+  - NPC
   - Player
   - ObstaclesDoors
   - NoPathfinding
@@ -35,9 +35,9 @@ TagManager:
   - FallingPlatform
   - Projectile
   - Camera1
-  - Camera2
-  - Camera3
-  - Camera4
+  - 
+  - 
+  - 
   - 
   - 
   - 
