@@ -19,7 +19,7 @@ TagManager:
   - 
   - 
   - Obstacles
-  - 
+  - NPC
   - Player
   - ObstaclesDoors
   - NoPathfinding
@@ -35,9 +35,9 @@ TagManager:
   - FallingPlatform
   - Projectile
   - Camera1
-  - Camera2
-  - Camera3
-  - Camera4
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -55,9 +55,12 @@ TagManager:
   - name: Foreground
     uniqueID: 1603220759
     locked: 0
-  - name: Characters
+  - name: Balcony
     uniqueID: 47421343
     locked: 0
-  - name: Above
+  - name: Balcony (Air)
     uniqueID: 961700441
+    locked: 0
+  - name: Foreground
+    uniqueID: 1431950923
     locked: 0
