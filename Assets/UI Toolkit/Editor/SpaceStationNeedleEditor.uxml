@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI%20Toolkit/SpaceStationNeedleEditor.uss?fileID=7433441132597879392&amp;guid=a325e1e4f0af00e49b1abdb4637a51fd&amp;type=3#SpaceStationNeedleEditor" />
+    <ui:EnumField label="Enum" type="UnityEngine.SpriteAlignment, UnityEngine.CoreModule" />
+</ui:UXML>
